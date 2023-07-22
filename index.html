@@ -7,7 +7,28 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <img src="img/cartoon-spider.webp" alt="" />
+   
+    <div class="overlay" id="overlay">
+      <div class="modal">
+        <h2>Welcome to the Site!</h2>
+        <p>Please enter your name:</p>
+        <input type="text" id="usernameInput" />
+        <button onclick="saveName()">Save</button>
+      </div>
+    </div>
+    <div class="score">Score: <span id="scoreValue">0</span></div>
+    <div class="level-select">
+      <label for="level">Select Level:</label>
+      <select id="level">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+      </select>
+  </div>
+
+  <div class="picture-container">
+    <img src="img/fly-black-png-transparent-images-3.png" alt="" />
+  </div>
     <script src="js/app.js"></script>
   </body>
 </html>
